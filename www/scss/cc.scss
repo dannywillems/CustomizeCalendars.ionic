@@ -1,0 +1,484 @@
+@import "variables";
+
+*
+{
+    box-sizing: border-box;
+}
+
+p
+{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    max-width: none !important;
+    white-space: normal !important;
+}
+
+body
+{
+    margin: 0px;
+}
+/* -------------------------------------------------------------------------- */
+/* Grid */
+.cc-container:after
+{
+    clear: both;
+    content: "";
+    display:table;
+}
+
+.cc-container
+{
+}
+
+.cc-row
+{
+    min-width: 1px;
+    width: 100%;
+}
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+.cc-theme-color
+{
+    color: $cc-theme !important;
+}
+
+.cc-black
+{
+    color: black !important;
+}
+
+.cc-grey
+{
+    color: grey !important;
+}
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/* Size */
+.cc-title
+{
+    font-size: 20px !important;
+    margin: 10px;
+}
+
+.cc-size-title
+{
+    font-size: 18px !important;
+}
+
+.cc-size-subtitle
+{
+    font-size: 16px !important;
+}
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/* font-weight */
+.cc-bold
+{
+    font-weight: bold;
+}
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/* Header */
+.bar
+{
+    padding: 0px;
+}
+
+.cc-header
+{
+    background-color: $cc-theme;
+    padding-top: $cc-header-padding-top;
+    padding-bottom: $cc-header-padding-bottom;
+}
+
+ion-side-menu
+{
+    ion-item
+    {
+        color: $cc-theme !important;
+    }
+}
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/* Icons */
+.cc-white
+{
+    color: white !important;
+}
+
+.cc-icon
+{
+    height: $cc-size-icon;
+}
+
+.cc-icon-left
+{
+    padding-right: $cc-theme-padding;
+}
+
+.cc-icon-bin-list-calendars
+{
+    margin-top: $cc-theme-margin-top;
+}
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/* Position */
+.cc-float-left
+{
+    float: left;
+}
+
+.cc-float-right
+{
+    float: right;
+}
+
+.cc-align-left
+{
+    text-align: left;
+}
+
+.cc-align-center
+{
+    text-align: center;
+}
+
+.cc-align-right
+{
+    text-align: right;
+}
+
+.cc-margin-left
+{
+    margin-left: $cc-theme-margin-left;
+}
+
+.cc-margin-right
+{
+    margin-right: $cc-theme-margin-right;
+}
+
+.cc-padding-left
+{
+    padding-left: $cc-theme-padding-left;
+}
+
+.cc-padding-right
+{
+    padding-right: $cc-theme-padding-right;
+}
+
+.cc-padding
+{
+    padding: $cc-theme-padding;
+}
+
+.cc-padding-top
+{
+    padding-top: $cc-theme-padding;
+}
+
+.cc-padding-bottom
+{
+    padding-bottom: $cc-theme-padding;
+}
+
+.cc-no-margin
+{
+    margin: 0px;
+}
+
+.cc-no-margin-bottom
+{
+    margin-bottom: 0px;
+}
+
+.cc-no-padding
+{
+    padding: 0px !important;
+}
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/* Border */
+.cc-border-bottom
+{
+    border-bottom: 1px solid $cc-theme;
+}
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/* Home page */
+.cc-list-calendars
+{
+    font-size: $cc-size-title;
+    border-bottom: 2px solid $cc-theme;
+    p
+    {
+        width: 90%;
+    }
+}
+
+.cc-home-empty
+{
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: 40%;
+    width: 70%;
+
+    padding-top: $cc-theme-padding;
+    padding-bottom: $cc-theme-padding;
+
+    border-top: 2px solid $cc-theme;
+    border-bottom: 2px solid $cc-theme;
+    font-size: 30pt;
+
+    line-height: 45px;
+}
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/* Popup */
+.cc-popup-remove
+{
+    .popup-container .popup
+    {
+        background-color: rgba(255, 255, 255, 1.0);
+    }
+
+    .popup-head
+    {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 10px 0px 10px 0px;
+        border-bottom: 2px solid $cc-theme;
+
+        .popup-title
+        {
+            font-size: 20px !important;
+        }
+    }
+
+    .popup-body
+    {
+        font-size: 16px !important;
+    }
+
+    .popup-buttons
+    {
+        padding: 0;
+        min-height: 0px;
+
+        .button
+        {
+            margin: 0;
+            padding: 10px;
+            width: 50%;
+            color: $cc-theme-popup-button-text;
+            border: none;
+            border-radius: 0px;
+        }
+
+        .cc-button-cancel
+        {
+            background-color: $cc-theme-cancel;
+        }
+
+        .cc-button-ok
+        {
+            background-color: $cc-theme-ok;
+        }
+    }
+}
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/* List */
+.cc-item
+{
+    padding: 0px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border: none;
+    border-bottom: 1px solid $cc-theme;
+    background-color: transparent;
+}
+
+.cc-input-label
+{
+    width: auto;
+}
+
+input::-webkit-input-placeholder
+{
+    color: grey;
+}
+
+input:-moz-placeholder
+{
+   color: grey;
+   opacity: 1;
+}
+
+input::-moz-placeholder
+{
+   color: grey;
+   opacity: 1;
+}
+
+input:-ms-input-placeholder
+{
+   color: grey;
+}
+
+input
+{
+    width: 100%;
+}
+
+.item-stacked-label, .input-label
+{
+    width: auto;
+    white-space: normal !important;
+}
+
+.cc-last-item
+{
+    border-bottom: none;
+}
+
+.cc-input-explanation
+{
+    width: auto;
+    white-space: normal !important;
+    color: grey;
+}
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+.cc-button-click
+{
+    width: 100px;
+    background-color: $cc-theme;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    img
+    {
+        width: 50%;
+    }
+    p
+    {
+        color: white;
+    }
+}
+
+.cc-button
+{
+    color: white;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    width: 70%;
+    font-size: 18px;
+}
+
+/* Need to insert this class because if we put the scan button into the list
+ * element, it fails */
+.cc-list-scan
+{
+    border-bottom: 1px solid $cc-theme;
+    padding-bottom: $cc-theme-padding;
+}
+
+.cc-button-cancel
+{
+    background-color: $cc-theme-cancel;
+}
+
+.cc-button-validate
+{
+    background-color: $cc-theme-ok;
+}
+
+.cc-input-select
+{
+    display: block;
+    background-color: white;
+    padding: 10px 10px 10px 0px;
+    color: $cc-theme;
+    border: none;
+
+    option
+    {
+        border-bottom: 1px solid $cc-theme;
+        padding: 5px;
+    }
+}
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/* Toggle (in events page) */
+.cc-item-toggle
+{
+    border: none;
+    background: none;
+    padding: 0px;
+    padding-bottom: 10px;
+    .toggle
+    {
+        top: 0px !important;
+    }
+}
+
+.toggle
+{
+    margin: 0px !important;
+}
+
+.toggle input:checked + .track
+{
+    border-color: $cc-theme;
+}
+
+.toggle-small input:checked + .track
+{
+    background: $cc-theme;
+}
+
+.toggle-small input:checked + .track .handle
+{
+    background: white;
+}
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+.cc-events-p
+{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.cc-events-div-edit
+{
+    margin-top: $cc-theme-margin-top;
+    a
+    {
+        text-decoration: none;
+    }
+}
+
+input[disabled], select[disabled], textarea[disabled],
+input[readonly]:not(.cloned-text-input),
+textarea[readonly]:not(.cloned-text-input), select[readonly]
+{
+    background-color: white;
+}
+/* -------------------------------------------------------------------------- */

@@ -1,0 +1,310 @@
+* {
+  box-sizing: border-box; }
+
+p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  max-width: none !important;
+  white-space: normal !important; }
+
+body {
+  margin: 0px; }
+
+/* -------------------------------------------------------------------------- */
+/* Grid */
+.cc-container:after {
+  clear: both;
+  content: "";
+  display: table; }
+
+.cc-row {
+  min-width: 1px;
+  width: 100%; }
+
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+.cc-theme-color {
+  color: #A80039 !important; }
+
+.cc-black {
+  color: black !important; }
+
+.cc-grey {
+  color: grey !important; }
+
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* Size */
+.cc-title {
+  font-size: 20px !important;
+  margin: 10px; }
+
+.cc-size-title {
+  font-size: 18px !important; }
+
+.cc-size-subtitle {
+  font-size: 16px !important; }
+
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* font-weight */
+.cc-bold {
+  font-weight: bold; }
+
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* Header */
+.bar {
+  padding: 0px; }
+
+.cc-header {
+  background-color: #A80039;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+ion-side-menu ion-item {
+  color: #A80039 !important; }
+
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* Icons */
+.cc-white {
+  color: white !important; }
+
+.cc-icon {
+  height: 25px; }
+
+.cc-icon-left {
+  padding-right: 15px; }
+
+.cc-icon-bin-list-calendars {
+  margin-top: 15px; }
+
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* Position */
+.cc-float-left {
+  float: left; }
+
+.cc-float-right {
+  float: right; }
+
+.cc-align-left {
+  text-align: left; }
+
+.cc-align-center {
+  text-align: center; }
+
+.cc-align-right {
+  text-align: right; }
+
+.cc-margin-left {
+  margin-left: 15px; }
+
+.cc-margin-right {
+  margin-right: 15px; }
+
+.cc-padding-left {
+  padding-left: 15px; }
+
+.cc-padding-right {
+  padding-right: 15px; }
+
+.cc-padding {
+  padding: 15px; }
+
+.cc-padding-top {
+  padding-top: 15px; }
+
+.cc-padding-bottom {
+  padding-bottom: 15px; }
+
+.cc-no-margin {
+  margin: 0px; }
+
+.cc-no-margin-bottom {
+  margin-bottom: 0px; }
+
+.cc-no-padding {
+  padding: 0px !important; }
+
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* Border */
+.cc-border-bottom {
+  border-bottom: 1px solid #A80039; }
+
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* Home page */
+.cc-list-calendars {
+  font-size: 18px;
+  border-bottom: 2px solid #A80039; }
+  .cc-list-calendars p {
+    width: 90%; }
+
+.cc-home-empty {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40%;
+  width: 70%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-top: 2px solid #A80039;
+  border-bottom: 2px solid #A80039;
+  font-size: 30pt;
+  line-height: 45px; }
+
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* Popup */
+.cc-popup-remove .popup-container .popup {
+  background-color: white; }
+.cc-popup-remove .popup-head {
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px 0px 10px 0px;
+  border-bottom: 2px solid #A80039; }
+  .cc-popup-remove .popup-head .popup-title {
+    font-size: 20px !important; }
+.cc-popup-remove .popup-body {
+  font-size: 16px !important; }
+.cc-popup-remove .popup-buttons {
+  padding: 0;
+  min-height: 0px; }
+  .cc-popup-remove .popup-buttons .button {
+    margin: 0;
+    padding: 10px;
+    width: 50%;
+    color: white;
+    border: none;
+    border-radius: 0px; }
+  .cc-popup-remove .popup-buttons .cc-button-cancel {
+    background-color: red; }
+  .cc-popup-remove .popup-buttons .cc-button-ok {
+    background-color: green; }
+
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* List */
+.cc-item {
+  padding: 0px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border: none;
+  border-bottom: 1px solid #A80039;
+  background-color: transparent; }
+
+.cc-input-label {
+  width: auto; }
+
+input::-webkit-input-placeholder {
+  color: grey; }
+
+input:-moz-placeholder {
+  color: grey;
+  opacity: 1; }
+
+input::-moz-placeholder {
+  color: grey;
+  opacity: 1; }
+
+input:-ms-input-placeholder {
+  color: grey; }
+
+input {
+  width: 100%; }
+
+.item-stacked-label, .input-label {
+  width: auto;
+  white-space: normal !important; }
+
+.cc-last-item {
+  border-bottom: none; }
+
+.cc-input-explanation {
+  width: auto;
+  white-space: normal !important;
+  color: grey; }
+
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+.cc-button-click {
+  width: 100px;
+  background-color: #A80039;
+  padding: 5px;
+  border: none;
+  border-radius: 10px; }
+  .cc-button-click img {
+    width: 50%; }
+  .cc-button-click p {
+    color: white; }
+
+.cc-button {
+  color: white;
+  border: none;
+  border-radius: 10px;
+  height: 40px;
+  width: 70%;
+  font-size: 18px; }
+
+/* Need to insert this class because if we put the scan button into the list
+ * element, it fails */
+.cc-list-scan {
+  border-bottom: 1px solid #A80039;
+  padding-bottom: 15px; }
+
+.cc-button-cancel {
+  background-color: red; }
+
+.cc-button-validate {
+  background-color: green; }
+
+.cc-input-select {
+  display: block;
+  background-color: white;
+  padding: 10px 10px 10px 0px;
+  color: #A80039;
+  border: none; }
+  .cc-input-select option {
+    border-bottom: 1px solid #A80039;
+    padding: 5px; }
+
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* Toggle (in events page) */
+.cc-item-toggle {
+  border: none;
+  background: none;
+  padding: 0px;
+  padding-bottom: 10px; }
+  .cc-item-toggle .toggle {
+    top: 0px !important; }
+
+.toggle {
+  margin: 0px !important; }
+
+.toggle input:checked + .track {
+  border-color: #A80039; }
+
+.toggle-small input:checked + .track {
+  background: #A80039; }
+
+.toggle-small input:checked + .track .handle {
+  background: white; }
+
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+.cc-events-p {
+  margin-top: 5px;
+  margin-bottom: 5px; }
+
+.cc-events-div-edit {
+  margin-top: 15px; }
+  .cc-events-div-edit a {
+    text-decoration: none; }
+
+input[disabled], select[disabled], textarea[disabled], input[readonly]:not(.cloned-text-input), textarea[readonly]:not(.cloned-text-input), select[readonly] {
+  background-color: white; }
+
+/* -------------------------------------------------------------------------- */

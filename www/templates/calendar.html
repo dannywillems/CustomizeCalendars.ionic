@@ -1,0 +1,82 @@
+<ion-view class="has-header">
+    <ion-content>
+        <div class="cc-container cc-padding">
+            <div class="cc-row">
+                <p class="cc-theme-color cc-align-center cc-title">
+                    {{addCalendarTitle}}
+                </p>
+                <div class="list cc-list">
+                    <label class="item cc-item item-input item-stacked-label">
+                        <p class="input-label cc-input-label cc-no-margin cc-black cc-size-title">
+                            {{calendarItem}}
+                        </p>
+                        <input id="calendarName" type="text cc-size-subtitle" class="cc-theme-color" ng-model="calendarName" placeHolder="{{calendarItemExample}}" />
+                        <p class="cc-no-margin cc-input-explanation cc-grey">
+                            {{calendarItemExplanation}}
+                        </p>
+                    </label>
+                    <label class="item cc-item item-select item-stacked-label">
+                        <p class="input-label cc-no-margin cc-input-label cc-size-title cc-black">
+                            {{agendaItem}}
+                        </p>
+                        <select ng-model="selectedAgenda"
+                                ng-options="agenda.name for agenda in availableAgenda"
+                                id="cc-selected-agenda"
+                                class="cc-input-select cc-size-subtitle">
+                        </select>
+                        <p class="cc-no-margin cc-input-explanation">
+                            {{agendaItemExplanation}}
+                        </p>
+                    </label>
+                    <label class="item cc-item">
+                        <p class="input-label cc-no-margin cc-input-label cc-black cc-size-title">
+                            {{synchronisationItem}}
+                        </p>
+                        <p class="cc-no-margin cc-input-explanation cc-grey cc-size-subtitle">
+                            {{synchronisationValue}}
+                        </p>
+                    </label>
+                    <label class="item cc-item item-input item-stacked-label cc-last-item">
+                        <p class="input-label cc-no-margin cc-input-label cc-black cc-size-title">
+                            {{urlItem}}
+                        </p>
+                        <input id="url" type="url" ng-model="url" class="cc-theme-color cc-size-subtitle" placeHolder="{{urlItemExample}}"/>
+                        <p class="input-label cc-no-margin cc-input-label cc-black cc-size-title">
+                            {{urlItemScan}}
+                        </p>
+                    </label>
+                    <div class="cc-row cc-align-center cc-list-scan">
+                        <button class="cc-button-click" ng-click="scanBarcode()">
+                            <img src="icons/qrcode.png" />
+                            <p class="cc-no-margin">
+                                {{urlItemScanText}}
+                            </p>
+                        </button>
+                    </div>
+                    <div class="cc-events-div-edit">
+                        <a ng-href="{{getLinkEditEvents()}}" class="cc-black cc-size-title">
+                            {{editEvents}}
+                            <img class="cc-icon cc-float-right" src="icons/cc-arrow.svg" />
+                        </a>
+                    </div>
+                </div>
+                <!--
+                <div class="cc-container">
+                    <div class="row">
+                        <div class="col col-50 cc-align-center">
+                            <button class="cc-button cc-button-cancel" ng-click="cancelClick()">{{text_cancel}}</button>
+                        </div>
+                        <div class="col col-50 cc-align-center">
+                            <button class="cc-button cc-button-validate" ng-click="validateClick()">{{text_register}}</button>
+                        </div>
+                    </div>
+                </div>
+                -->
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
+
+<!--
+https://hplanning2015.umons.ac.be/Telechargements/ical/EdT_MAB1_en_sciences_mathematiques__FA.ics?version=13.0.2.1&idICal=C16CCBF2F5D2E0FE398916B7A03CDD21&param=643d5b312e2e36325d2666683d3126663d3131303030
+-->

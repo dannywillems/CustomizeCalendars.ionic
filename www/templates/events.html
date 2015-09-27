@@ -1,0 +1,42 @@
+<ion-view class="has-header">
+    <ion-content>
+        <div class="cc-container cc-padding">
+            <div class="cc-row">
+                <p class="cc-theme-color cc-align-center cc-title">
+                    UMONS MA1 Math Finalité informatique
+                </p>
+                <div class="cc-padding-top cc-padding-bottom cc-border-bottom" ng-repeat="event in events">
+                    <ion-toggle ng-toggle="toggleSynchronize({{'event-' + event.id}});"
+                                class="cc-size-title cc-item-toggle cc-black"
+                                ng-model="event.synchronize">
+                        Synchroniser cet événement
+                    </ion-toggle>
+                    <div id="{{'event-' + event.id}}">
+                        <p ng-class="{ 'cc-black': event.synchronize, 'cc-grey': !event.synchronize }" class="cc-events-p cc-size-subtitle">
+                            {{text_rename}}
+                        </p>
+                        <p ng-class="{ 'cc-theme-color': event.synchronize, 'cc-grey': !event.synchronize }" class="cc-events-p cc-theme-color cc-size-subtitle">
+                            {{event.originalName}}
+                        </p>
+                        <p ng-class="{ 'cc-black': event.synchronize, 'cc-grey': !event.synchronize }" class="cc-events-p cc-input-label cc-no-padding cc-black cc-size-subtitle">
+                            {{text_in}}
+                        </p>
+                        <input ng-class="{ 'cc-theme-color': event.synchronize, 'cc-grey': !event.synchronize }" ng-readonly="!event.synchronize" type="text" class="cc-size-subtitle" placeHolder="{{text_newName}}" value="{{event.editedName}}"/>
+                    </div>
+                </div>
+                <!--
+                <div class="cc-container">
+                    <div class="row">
+                        <div class="col col-50 cc-align-center">
+                            <button class="cc-button cc-button-cancel" ng-click="cancelClick()">{{text_cancel}}</button>
+                        </div>
+                        <div class="col col-50 cc-align-center">
+                            <button class="cc-button cc-button-validate" ng-click="validateClick()">{{text_register}}</button>
+                        </div>
+                    </div>
+                </div>
+                -->
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

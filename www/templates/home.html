@@ -1,0 +1,19 @@
+<ion-view class="has-header">
+    <ion-content id="cc_home_page" class="cc-margin-left cc-margin-right">
+        <div id="cc_home_page_container" class="cc-container cc-row cc-padding-left cc-padding-right">
+            <div class="cc-container cc-row cc-align-center" ng-show="isEmpty(calendars)">
+                <div class="cc-home-empty" id="cc-home-empty">
+                    {{noCalendar}}
+                </div>
+            </div>
+        </div>
+        <div class="cc-container cc-list-calendars" ng-hide="isEmpty(calendars)" ng-repeat="calendar in calendars">
+            <p ui-sref="menuPage.calendar({id: calendar.id})" class="cc-float-left">
+                {{calendar.name}}
+            </p>
+            <div class="cc-float-right" ng-click="ccPopupRemoveCalendar(calendar.id, calendar.name)">
+                <img src="icons/cc-bin.svg" class="cc-icon cc-icon-bin-list-calendars" />
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
