@@ -28,7 +28,7 @@ These plugins are:
 
 BUILD AND INSTALL
 -----------------
-To avoid to repeat commands to type into the terminal, a shell script (build.sh)
+To avoid to repeat commands to type into the terminal, a shell script (buildAndroid.sh)
 is available. It builds the application and move the apk (only for Android). If
 adb is installed and if there's a Android device connected, it will install and
 run the application.
