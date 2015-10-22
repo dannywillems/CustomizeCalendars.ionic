@@ -260,6 +260,9 @@ input {
 .cc-button-validate {
   background-color: green; }
 
+.cc-button-theme {
+  background-color: #A80039; }
+
 .cc-input-select {
   display: block;
   background-color: white;

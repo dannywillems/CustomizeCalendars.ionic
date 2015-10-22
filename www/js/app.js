@@ -38,6 +38,7 @@ angular.module("customizecalendars", ['ionic', 'customizecalendars.controllers']
                 abstract: true,
                 url: '/menu',
                 templateUrl: 'templates/menu.html',
+                reload: true,
                 controller: 'MenuController'
             }
         )
@@ -49,7 +50,9 @@ angular.module("customizecalendars", ['ionic', 'customizecalendars.controllers']
                 abstract: true,
                 url: '/menuPage',
                 templateUrl: 'templates/menu_page.html',
-                controller: 'MenuController'
+                reload: true,
+                cache: false,
+                controller: 'MenuPageController'
             }
         )
 
@@ -59,6 +62,8 @@ angular.module("customizecalendars", ['ionic', 'customizecalendars.controllers']
             'menu.home',
             {
                 url: '/home',
+                cache: false,
+                reload: true,
                 views:
                 {
                     'mainContent':
@@ -75,6 +80,8 @@ angular.module("customizecalendars", ['ionic', 'customizecalendars.controllers']
             'menu.settings',
             {
                 url: '/settings',
+                cache: false,
+                reload: true,
                 views:
                 {
                     'mainContent':
@@ -91,6 +98,8 @@ angular.module("customizecalendars", ['ionic', 'customizecalendars.controllers']
             'menu.about',
             {
                 url: '/about',
+                cache: false,
+                reload: true,
                 views:
                 {
                     'mainContent':
@@ -106,6 +115,8 @@ angular.module("customizecalendars", ['ionic', 'customizecalendars.controllers']
             'menuPage.calendar',
             {
                 url: '/calendar/:id',
+                cache: false,
+                reload: true,
                 views:
                 {
                     'mainContent':
@@ -122,6 +133,8 @@ angular.module("customizecalendars", ['ionic', 'customizecalendars.controllers']
             'menuPage.events',
             {
                 url: '/events/:calendarID',
+                cache: false,
+                reload: true,
                 views:
                 {
                     'mainContent':

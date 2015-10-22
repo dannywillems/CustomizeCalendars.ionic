@@ -47,6 +47,9 @@ var cc_text_url_item_scan_text = "Scan";
 
 var cc_text_scan_failed = "Le scan a échoué";
 
+var cc_text_calendar_field_to_fill = "Veuillez remplir les champs du nom, " +
+    "de l'url et l'agenda";
+
 var cc_text_edit_events = "Modifier les événements";
 /* -------------------------------------------------------------------------- */
 
