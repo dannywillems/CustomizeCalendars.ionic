@@ -35,7 +35,7 @@ run the application.
 
 You can use
 ```
-./build.sh
+./buildAndroid.sh
 ```
 to execute the script.
 
