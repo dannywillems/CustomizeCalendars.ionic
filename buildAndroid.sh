@@ -37,6 +37,7 @@ cd $LOCATION && $CC build $PLATFORM
 
 echo "-------------------------------------------------------------------------"
 echo "Make a copy in apk directory with date and hour"
+mkdir -p $OUTPUT
 cp $APK $OUTPUT/$PROJECT_NAME-$VERSION-$DATE.apk
 
 echo "-------------------------------------------------------------------------"
