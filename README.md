@@ -26,6 +26,7 @@ These plugins are:
 - phonegap-plugin-barcodescanner
 - calendar-plugin-calendar
 - cordova-plugin-whitelist
+- cordova-plugin-inappbrowser
 
 BUILD AND INSTALL
 -----------------
