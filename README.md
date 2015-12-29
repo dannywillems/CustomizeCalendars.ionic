@@ -25,6 +25,7 @@ These plugins are:
 - cordova-plugin-file-transfer
 - phonegap-plugin-barcodescanner
 - calendar-plugin-calendar
+- cordova-plugin-whitelist
 
 BUILD AND INSTALL
 -----------------
